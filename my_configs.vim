@@ -95,7 +95,12 @@ let g:NERDTreeWinPos = 'left'
 " 建议修改windows注册表，使cmd默认窗口为80列，25行
 function! Run()
     let cmd_str = input('exec cmd: ')
-    exec '!start cmd /c "title '.cmd_str.' && '.cmd_str.' && pause"'
+    if has('win32')
+        exec '!start cmd /c "title '.cmd_str.' && '.cmd_str.' && pause"'
+    else
+        exec cmd_str
+    endif
+    
 endfunction
 
 nmap <leader>r :call Run()<CR>

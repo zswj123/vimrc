@@ -20,5 +20,5 @@ os.system('git clone https://github.com/majutsushi/tagbar %s/tagbar' % MY_PLUGIN
 os.system('rm -rf %s/typescript-vim' % MY_PLUGINS)
 os.system('git clone https://github.com/leafgarland/typescript-vim %s/typescript-vim' % MY_PLUGINS)
 
-os.system('rm -rf %s/nvim-nim' % MY_PLUGINS)
-os.system('git clone https://github.com/baabelfish/nvim-nim %s/nvim-nim' % MY_PLUGINS)
+os.system('rm -rf %s/nim.vim' % MY_PLUGINS)
+os.system('git clone https://github.com/zah/nim.vim %s/nim.vim' % MY_PLUGINS)
